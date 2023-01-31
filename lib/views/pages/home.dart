@@ -99,6 +99,13 @@ class _HomePageState extends State<HomePage> {
                         if (nameC.text.isNotEmpty &&
                             bodyC.text.isNotEmpty &&
                             titleC.text.isNotEmpty) {
+                          HomeFunctions.tap(
+                            nameC.text,
+                            titleC.text,
+                            bodyC.text,
+                            value,
+                            context,
+                          );
                           nameC.clear();
                           bodyC.clear();
                           titleC.clear();
